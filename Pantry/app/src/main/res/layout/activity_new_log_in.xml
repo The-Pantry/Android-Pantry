@@ -6,42 +6,44 @@
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:paddingBottom="@dimen/activity_vertical_margin"
-                tools:context="com.nicodangelo.login.LogIn">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New User"
-        android:id="@+id/newLogIn"
-        android:onClick="createNewUser"
-        android:layout_below="@+id/logInPasswordText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="124dp"/>
+                tools:context="com.nicodangelo.login.NewLogIn"
+                android:background="#00FFFF">
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:id="@+id/logInUsernameText"
+        android:id="@+id/usernameText"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"/>
+        android:layout_marginTop="42dp"/>
 
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/logInPasswordText"
-        android:layout_below="@+id/logInUsernameText"
+        android:id="@+id/passwordText"
+        android:layout_below="@+id/usernameText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="60dp"
+        android:layout_alignParentEnd="false"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordCheckText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
-        android:id="@+id/logInUserButton"
-        android:layout_centerVertical="true"
+        android:id="@+id/logInButton"
+        android:layout_below="@+id/passwordCheckText"
         android:layout_centerHorizontal="true"
-        android:onClick="signIn"/>
+        android:layout_marginTop="77dp"
+        android:onClick="signUp"/>
 </RelativeLayout>
