@@ -10,12 +10,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.parse.Parse;
+
 
 public class Pantrie extends ActionBarActivity
 {
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
+        ///////////////////////////////////////////////////////////////////////////////////////////
+        // Enable Local Datastore, and make a Test Parse Object!
+        Parse.enableLocalDatastore(this);
+        Parse.initialize(this, "pBnaKMYAdbbfRhdvcKQEWFLiKtmsXXzOZXAAGoLh", "tJpug7m4dtF6FhpaMoM9PWAxlTRAbSoAKLcdWx5J");
+        ///////////////////////////////////////////////////////////////////////////////////////////
+
         onCreateLogInDialog();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantrie);
