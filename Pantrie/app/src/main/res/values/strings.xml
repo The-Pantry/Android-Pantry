@@ -4,4 +4,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_log_in_dialog">LogInDialog</string>
+    <string name="title_activity_new_log_in_dialog">NewLogInDialog</string>
+    <string name="title_activity_new_pantrie">NewPantrie</string>
 </resources>

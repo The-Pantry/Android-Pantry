@@ -2,11 +2,13 @@ package com.nicodangelo.pantrie;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class Pantrie extends ActionBarActivity
@@ -14,10 +16,16 @@ public class Pantrie extends ActionBarActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-
-
+        onCreateLogInDialog();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantrie);
+    }
+
+    public void onCreateLogInDialog()
+    {
+        FragmentManager manager = getFragmentManager();
+        LogInDialog logInDialog = new LogInDialog();
+        logInDialog.show(manager,"logInDialog");
     }
 
     @Override

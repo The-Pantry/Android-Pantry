@@ -20,6 +20,14 @@
             android:name=".LogInDialog"
             android:label="@string/title_activity_log_in_dialog" >
         </activity>
+        <activity
+            android:name=".NewLogInDialog"
+            android:label="@string/title_activity_new_log_in_dialog" >
+        </activity>
+        <activity
+            android:name=".NewPantrie"
+            android:label="@string/title_activity_new_pantrie" >
+        </activity>
     </application>
 
 </manifest>
