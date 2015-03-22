@@ -43,6 +43,7 @@ public class LogInDialog extends DialogFragment implements View.OnClickListener
         newLogInButton.setOnClickListener(this);
         logInButton.setOnClickListener(this);
         setCancelable(false);
+
         //need to return the view!
         return view;
     }
